@@ -13,7 +13,7 @@ error_reporting(E_ALL);
     private $conn;
 
     // DB connect
-    public function __construct() {
+    public function connect() {
       $this->dsn = 'mysql:host=' . $this->host . ';dbname=' . $this->db_name;
       $this->conn = null;
 
